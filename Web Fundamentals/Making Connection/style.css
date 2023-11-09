@@ -1,0 +1,279 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my css code start here */
+
+header{
+    background-color: rgb(48, 168, 202);
+    height: 70px;
+}
+svg{
+    
+    height:80px;
+    width: 80px;
+    padding-left: 10px;
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+.locationDiv{
+    align-items: center;
+    margin: 10px 0;
+}
+
+h2{
+    padding-top: 20px;
+
+}
+#bolder{
+    font-weight: bolder;
+    font-size: large;
+}
+.border{
+
+    border: 2px solid silver;
+    line-height: 1.5em;
+    padding:20px;
+    
+}
+
+h3{
+    font-weight: lighter;
+
+}
+img{
+    width: 30px;
+    height: 20px;
+    /* display: flex; */
+}
+.name{
+    display: flex;
+    font-weight: bolder;
+
+}
+.skills{
+    display: flex;
+    display: inline-block;
+    line-height: 1.5em;
+}
+
+.footer{
+    align-items: center;
+}
+.editProfile{
+    margin: 0 5px;
+}
+.d-flex{
+    display: flex;
+}
+.row{
+    justify-content: space-between;
+}
+
+.right{
+    width: 25%;
+    height: fit-content;
+    border: 1px solid silver;
+    margin-bottom: 20%;
+    margin-top: 10px;
+}
+.left{
+    width: 70%;
+}
+.container{
+    width: 60%;
+    margin: auto;
+}
+.connections{
+    background-color: black;
+    color: white;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: center;
+}
+.connectionNr{
+    background-color: gray;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin-right: 10px;
+    text-align: center;
+}
+.person{
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.approveReject{
+    align-items: center;
+    
+    
+}
+.YourConnection{
+    height: fit-content;
+    border: 1px solid silver;
+}
+#view{
+    border:1px solid silver ;
+    padding: 2px;
+    text-align: justify;
+
+}
+
+.education{
+    height: fit-content;
+    border: 1px solid silver;
+    line-height: 4dvb;
+}
+
+.top{
+    background-color: black;
+    color: white;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: center;
+}
+
+.date{
+    color: grey;
+}
+
+.buttom{
+ justify-content: space-between;
+ width: 60%;
+ margin: auto;
+}
+.left{
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.connectionusers{
+    background-color: gray;
+    width: fit-content;
+    height: 25px;
+    border-radius:60% ;
+    margin-right: 10px;
+    text-align: center;
+    padding: 2px;
+    
+}
+
+.users{
+    padding: 10px;
+    justify-content: space-between;
+}
+
+#T-right{
+    position: relative;
+    top: -120px;
+    left: 20px;
+}
+
+
+
+.nav{
+    background-color: rgba(0, 0, 0, 0.83);
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    font-family: sans-serif;
+    width: 60%;
+    margin: auto;
+    
+}
+h1{
+    margin: 10px;
+    font-weight: lighter;
+    
+}
+
+.nav-links{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    
+}
+ul li{
+    color: aliceblue;
+    display: inline-block;
+    text-align: justify;
+    margin: 10px;
+    
+    
+}
+a{
+    color: rgb(191, 196, 200);
+    text-decoration: none;
+    
+
+}
+
+.active{
+    color: aliceblue;
+    margin: 5px;
+   
+    
+}
+
+.btn{
+    background-color: rgb(37, 172, 206);
+    color: aliceblue;
+    height: 25px;
+    box-shadow: 5px 5px  black;
+    border: 5px black;
+
+}
+.none{
+    display: none;
+}

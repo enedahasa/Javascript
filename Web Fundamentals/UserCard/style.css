@@ -1,0 +1,113 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my css code start here */
+
+header{
+    background-color: rgb(48, 168, 202);
+    /* padding-top: 30px; */
+    margin-top: 100px;
+    margin-left: 400px;
+    margin-right: 400px;
+    /* display: block;
+    display: flex; */
+    height: 70px;
+    padding-top: 40px;
+}
+svg{
+    /* scroll-padding-inline: 50px; */
+    height:100px;
+    width: 100px;
+    /* display: flex; */  
+    padding-left: 10px; 
+}
+
+h2{
+    padding-top: 20px;
+
+}
+#bolder{
+    font-weight: bolder;
+    font-size: large;
+}
+.border{
+    margin-top: 0px;
+    margin-left: 400px;
+    margin-right: 400px;
+    border: 2px solid silver;
+    line-height: 1.5em;
+    padding:20px;
+    
+}
+
+h3{
+    font-weight: lighter;
+
+}
+img{
+    width: 30px;
+    height: 20px;
+    /* display: flex; */
+    padding-top: 20px;
+}
+.name{
+    display: flex;
+    text-align: inline;
+    font-weight: bolder;
+
+}
+.skills{
+    display: flex;
+    display: inline-block;
+    line-height: 1.5em;
+}
+
+.footer{
+    word-spacing: 5px;
+}

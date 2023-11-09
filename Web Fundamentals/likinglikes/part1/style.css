@@ -1,0 +1,23 @@
+.line1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+ .tab1{
+    border: solid black;
+    width: fit-content;
+    padding: 1%;
+    margin: 10%;
+    font-family: sans-serif;
+    word-spacing: 0.8 em;
+    letter-spacing: 1mm;
+ }
+ 
+#like{
+    background-color: rgba(245, 235, 43, 0.999);
+    color: black;
+    box-shadow: 2px 2px black;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10%;
+}

@@ -50,24 +50,30 @@ table {
 /* my css code start here */
 
 .top{
-    background-color: rgba(0, 4, 255, 0.449);
-    color:aliceblue;
+    background-color: rgba(0, 170, 255, 0.438);
+    color:white;
     font-family: sans-serif;
     font-weight: bold;
     display: flow-root;
     display: flex;
     padding: 1%;
     justify-content: space-between;
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
 }
 
 .cities{
     display: flex;
-    color: aliceblue;
+    color: white;
     height: 40px;
     text-align: center;
-    flex-direction: row;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 #weather{
@@ -80,4 +86,94 @@ table {
     display: inline-block;
     padding: 10px 20px 10px 20px;
     font-size: larger;
+}
+
+#bold{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.city{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 25px;
+    border-bottom:2px solid black;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.today , .tomorrow, .friday, .saturday {
+    background-color:rgba(192, 192, 192, 0.264);
+    padding: 20px;
+    height: 400px;
+    width:15%;
+    line-height: 5em ;
+    margin: 10px;
+    
+    
+    
+
+}
+
+.days{
+    display: flex;
+    justify-content: space-around;
+    margin:20px;
+    font-size: large;
+    font-weight: bold;
+    margin: 10px;
+    height: 250px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+   
+    
+}
+
+.temp{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.red{
+    color: red;
+}
+
+.blue{
+    color: blue;
+}
+
+.cookie{
+    display: flex;
+    border: 3px solid black;
+    width: 83%;
+    margin: 8%;
+    justify-content: space-between;
+    padding: 5px;
+    position: fixed;
+    top: 62%;
+    
+}
+
+.d-flex{
+    display: flex;
+    display: inline-block;
+    margin-top: 1%;
+    word-spacing: 10px;
+}
+
+button{
+    height: fit-content;
+    background-color: rgba(0, 170, 255, 0.438);
+    box-shadow: 2px 2px black;
+    margin-top: 2%;
+    margin-right:1% ;
 }

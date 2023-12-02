@@ -1,15 +1,17 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import './component/HookForm.jsx'
+import HookForm from './components/HookForm'
+import Display from './components/Display'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [personList, setPersonList] = useState([])
 
   return (
     <>
-      
+        <HookForm setPersonList={setPersonList} personList={personList} /> 
+        < Display personList={personList} />
+          
     </>
   )
 }

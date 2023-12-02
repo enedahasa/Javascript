@@ -1,39 +1,54 @@
 import React, { useState } from  'react';
-import 'component'
     
-const UserForm = (props) => {
-    const [username, setUsername] = useState("");
+const HookForm = (props) => {
+    const [firstname, setFirstName] = useState("");
+    const [lastname, setLastName] = useState("");
     const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");  
+    const [password, setPassword] = useState("");
+    const [confirmpassword, setConfirmPassword] = useState("");
+    const {personList, setPersonList} = props;  
     
-    const createUser = (e) => {
+const createUser = (e) => {
        
         e.preventDefault();
+        setPersonList([...personList,{firstname:firstname,lastname:lastname,email:email,password:password,confirmpassword:confirmpassword}]);
+        console.log(personList);
     
-        const newUser = { 
-            username: username, 
-            email: email, 
-            password: password 
-        };
-        console.log("Welcome", newUser);
+        setFirstName("");
+        setLastName(""); 
+        setEmail(""); 
+        setPassword("");
+        setConfirmPassword("");
     };
     
     return(
-        <form onSubmit={ createUser }>
+        <div>
+        <form onSubmit={(e) => createUser (e)}>
             <div>
-                <label>Username: </label> 
-                <input type="text" onChange={ (e) => setUsername(e.target.value) } />
+                <label>First Name: </label> 
+                <input type="text" value={firstname} onChange={(e) => setFirstName(e.target.value)} />
             </div>
+
+            <div>
+                <label>Last Name: </label> 
+                <input type="text" value={lastname} onChange={(e) => setLastName(e.target.value)} />
+            </div>
+
             <div>
                 <label>Email Address: </label> 
-                <input type="text" onChange={ (e) => setEmail(e.target.value) } />
+                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
             </div>
             <div>
                 <label>Password: </label>
-                <input type="text" onChange={ (e) => setPassword(e.target.value) } />
+                <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            </div>
+            <div>
+                <label>Confirm Password: </label>
+                <input type="password" value={confirmpassword} onChange={(e) => setConfirmPassword(e.target.value)} />
             </div>
             <input type="submit" value="Create User" />
         </form>
+        </div>
     );
 };
     
